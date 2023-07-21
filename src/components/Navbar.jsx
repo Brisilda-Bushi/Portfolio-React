@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
@@ -6,7 +6,24 @@ import { logo, menu, close } from "../assets";
 
 const Navbar = () => {
     const [active, setActive] = useState("");
-    const [toggle, setToggle] = useState("");
+    const [toggle, setToggle] = useState(false);
+    const [scrolled, setScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollTop = window.scrollY;
+            if (scrollTop > 100) {
+                setScrolled(true);
+            } else {
+                setScrolled(false);
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+
     return (
         <nav
             className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}
@@ -18,7 +35,6 @@ const Navbar = () => {
                     onClick={() => {
                         setActive("");
                         window.scrollTo(0, 0);
-                        setToggle(!toggle);
                     }}
                 >
                     <img
@@ -32,17 +48,17 @@ const Navbar = () => {
                     </p>
                 </Link>
                 <ul className="list-none hidden sm:flex flex-row gap-10">
-                    {navLinks.map((link) => (
+                    {navLinks.map((nav) => (
                         <li
-                            key={link.id}
+                            key={nav.id}
                             className={`${
-                                active === link.title
+                                active === nav.title
                                     ? "text-white"
                                     : "text-secondary"
                             } hover:text-white text-[18px] font-medium cursor-pointer`}
-                            onClick={() => setActive(link.title)} // TODO: need to make the navlinks active
+                            onClick={() => setActive(nav.title)}
                         >
-                            <a href={`${link.id}`}>{link.title}</a>
+                            <a href={`#${nav.id}`}>{nav.title}</a>
                         </li>
                     ))}
                 </ul>
@@ -60,20 +76,20 @@ const Navbar = () => {
                         } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w[140px] z-10 rounded-xl`}
                     >
                         <ul className="list-none flex justify-end items-start flex-col gap-4">
-                            {navLinks.map((link) => (
+                            {navLinks.map((nav) => (
                                 <li
-                                    key={link.id}
+                                    key={nav.id}
                                     className={`${
-                                        active === link.title
+                                        active === nav.title
                                             ? "text-white"
                                             : "text-secondary"
                                     } font-poppins font-medium cursor-pointer text-[16px]`}
                                     onClick={() => {
                                         setToggle(!toggle);
-                                        setActive(link.title);
+                                        setActive(nav.title);
                                     }}
                                 >
-                                    <a href={`${link.id}`}>{link.title}</a>
+                                    <a href={`${nav.id}`}>{nav.title}</a>
                                 </li>
                             ))}
                         </ul>

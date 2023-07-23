@@ -16,6 +16,9 @@ jobs:
             - name: Install all dependencies
               run: npm install
 
+            - name: Use variables
+              run: echo "$VITE_KEY_EMAIL, $VITE_PERSONAL_EMAIL, $VITE_SERVICE_EMAIL, $VITE_TEMPLATE_EMAIL"
+
             - name: Build
               run: npm run build # The build command of your project
 

@@ -1,7 +1,6 @@
 {
-    "name": "hostinger-react-app",
+    "name": "portfolio-react",
     "version": "0.1.0",
-    "homepage": "https://hostinger-react-app.com",
     "private": true,
     "type": "module",
     "scripts": {

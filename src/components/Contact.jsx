@@ -5,10 +5,12 @@ import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
-const serviceEmail = import.meta.env.VITE_SERVICE_EMAIL;
-const templateEmail = import.meta.env.VITE_TEMPLATE_EMAIL;
-const personalEmail = import.meta.env.VITE_PERSONAL_EMAIL;
-const keyEmail = import.meta.env.VITE_KEY_EMAIL;
+import {
+    serviceEmail,
+    templateEmail,
+    personalEmail,
+    keyEmail,
+} from "../../config";
 
 const Contact = () => {
     const formRef = useRef();

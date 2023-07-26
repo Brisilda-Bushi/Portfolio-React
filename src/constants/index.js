@@ -8,13 +8,14 @@ import {
     html,
     css,
     reactjs,
-    redux,
+    storybook,
     tailwind,
     nodejs,
+    nextjs,
     mongodb,
     git,
     figma,
-    docker,
+    aws,
     meta,
     starbucks,
     tesla,
@@ -46,15 +47,15 @@ const services = [
         icon: web,
     },
     {
-        title: "React Native Developer",
+        title: "React/Nextjs Developer",
         icon: mobile,
     },
     {
-        title: "Backend Developer",
+        title: "React Native Developer",
         icon: backend,
     },
     {
-        title: "Content Creator",
+        title: "UI/UX Designer",
         icon: creator,
     },
 ];
@@ -81,12 +82,20 @@ const technologies = [
         icon: reactjs,
     },
     {
-        name: "Redux Toolkit",
-        icon: redux,
+        name: "NextJs",
+        icon: nextjs,
     },
     {
-        name: "Tailwind CSS",
-        icon: tailwind,
+        name: "Storybook",
+        icon: storybook,
+    },
+    {
+        name: "figma",
+        icon: figma,
+    },
+    {
+        name: "git",
+        icon: git,
     },
     {
         name: "Node JS",
@@ -101,16 +110,12 @@ const technologies = [
         icon: threejs,
     },
     {
-        name: "git",
-        icon: git,
+        name: "AWS",
+        icon: aws,
     },
     {
-        name: "figma",
-        icon: figma,
-    },
-    {
-        name: "docker",
-        icon: docker,
+        name: "Tailwind CSS",
+        icon: tailwind,
     },
 ];
 

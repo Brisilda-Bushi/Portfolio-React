@@ -1,0 +1,11 @@
+Model Information:
+* title:	Lost Ark Sorceress - Saintone
+* source:	https://sketchfab.com/3d-models/lost-ark-sorceress-saintone-c9c73241e1cc4f0193b8bbe749404431
+* author:	Epimethia (https://sketchfab.com/Epimethia)
+
+Model License:
+* license type:	CC-BY-NC-SA-4.0 (http://creativecommons.org/licenses/by-nc-sa/4.0/)
+* requirements:	Author must be credited. No commercial use. Modified versions must have the same license.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Lost Ark Sorceress - Saintone" (https://sketchfab.com/3d-models/lost-ark-sorceress-saintone-c9c73241e1cc4f0193b8bbe749404431) by Epimethia (https://sketchfab.com/Epimethia) licensed under CC-BY-NC-SA-4.0 (http://creativecommons.org/licenses/by-nc-sa/4.0/)

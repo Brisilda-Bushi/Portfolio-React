@@ -4,6 +4,7 @@ import creator from "./creator.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
 import github from "./github.png";
+import website from "./website.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
@@ -22,43 +23,48 @@ import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 import aws from "./tech/aws.png";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+import DCI from "./company/DCI.png";
+import SKF from "./company/SKF.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import freebie from "./projects/Freebie.png";
+import ig_clone from "./projects/IG-clone-ex.png";
+import imageboard from "./projects/imageboard.png";
+import pokemon from "./projects/pokemon.png";
+import alpaca from "./projects/alpaca.png";
+import carrent from "./projects/carrent.png";
+import e_commerce from "./projects/ecommerce.png";
 
 export {
-  logo,
-  backend,
-  creator,
-  mobile,
-  web,
-  github,
-  menu,
-  close,
-  css,
-  nextjs,
-  figma,
-  git,
-  aws,
-  html,
-  javascript,
-  mongodb,
-  nodejs,
-  reactjs,
-  storybook,
-  tailwind,
-  typescript,
-  threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
-  carrent,
-  jobit,
-  tripguide,
+    logo,
+    backend,
+    creator,
+    mobile,
+    web,
+    github,
+    website,
+    menu,
+    close,
+    css,
+    nextjs,
+    figma,
+    git,
+    aws,
+    html,
+    javascript,
+    mongodb,
+    nodejs,
+    reactjs,
+    storybook,
+    tailwind,
+    typescript,
+    threejs,
+    SKF,
+    DCI,
+    carrent,
+    freebie,
+    ig_clone,
+    imageboard,
+    pokemon,
+    alpaca,
+    e_commerce,
 };

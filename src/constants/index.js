@@ -16,13 +16,15 @@ import {
     git,
     figma,
     aws,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
+    SKF,
+    DCI,
     carrent,
-    jobit,
-    tripguide,
+    freebie,
+    ig_clone,
+    imageboard,
+    pokemon,
+    alpaca,
+    e_commerce,
     threejs,
 } from "../assets";
 
@@ -121,91 +123,73 @@ const technologies = [
 
 const experiences = [
     {
-        title: "React.js Developer",
-        company_name: "Starbucks",
-        icon: starbucks,
-        iconBg: "#383E56",
-        date: "March 2020 - April 2021",
+        title: "Web Developer Tutor",
+        company_name: "DCI",
+        icon: DCI,
+        iconBg: "#E6DEDD",
+        date: "Jan 2021 - Dec 2021",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Creating exercises for my fellow learners.",
+            "Live coding and explaining challenging concepts.",
+            "Plan targeted lessons around questions and project concepts.",
+            "Help during the final project, while working on my final project.",
         ],
     },
     {
-        title: "React Native Developer",
-        company_name: "Tesla",
-        icon: tesla,
+        title: "UI/UX Designer",
+        company_name: "SKF",
+        icon: SKF,
         iconBg: "#E6DEDD",
-        date: "Jan 2021 - Feb 2022",
+        date: "Jan 2022 - Present",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Collaborate with UI and Branding Team.",
+            "Use Figma to create/alter UI components according to our needs.",
+            "Create Lo-Fi and Hi-Fi designs, Hi-Fi designs are used for prototypes.",
+            "Use Prototypes to perform usability tests with various end user profiles.",
         ],
     },
     {
         title: "Web Developer",
-        company_name: "Shopify",
-        icon: shopify,
-        iconBg: "#383E56",
-        date: "Jan 2022 - Jan 2023",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "Full stack Developer",
-        company_name: "Meta",
-        icon: meta,
+        company_name: "SKF",
+        icon: SKF,
         iconBg: "#E6DEDD",
-        date: "Jan 2023 - Present",
+        date: "Jan 2022 - Present",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
+            "Developing and maintaining web applications using Next.js and other related technologies.",
             "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
             "Implementing responsive design and ensuring cross-browser compatibility.",
             "Participating in code reviews and providing constructive feedback to other developers.",
         ],
-    },
-];
-
-const testimonials = [
-    {
-        testimonial:
-            "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-        name: "Sara Lee",
-        designation: "CFO",
-        company: "Acme Co",
-        image: "https://randomuser.me/api/portraits/women/4.jpg",
-    },
-    {
-        testimonial:
-            "I've never met a web developer who truly cares about their clients' success like Rick does.",
-        name: "Chris Brown",
-        designation: "COO",
-        company: "DEF Corp",
-        image: "https://randomuser.me/api/portraits/men/5.jpg",
-    },
-    {
-        testimonial:
-            "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-        name: "Lisa Wang",
-        designation: "CTO",
-        company: "456 Enterprises",
-        image: "https://randomuser.me/api/portraits/women/6.jpg",
     },
 ];
 
 const projects = [
     {
-        name: "Car Rent",
+        name: "Instagram Clone",
         description:
-            "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+            "Mobile-based platform that allows users to register, sign in, create a post, like and comment others posts.",
+        tags: [
+            {
+                name: "react-native",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "firebase",
+                color: "green-text-gradient",
+            },
+            {
+                name: "yup",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: ig_clone,
+        web_code_link: "https://github.com/Brisilda-Bushi/IG-clone",
+        source_code_link: "https://github.com/Brisilda-Bushi/IG-clone",
+    },
+    {
+        name: "Freebie",
+        description:
+            "Web application that enables users to find or post items for free on their location. They can register and log in to interact with the users that have posted items to be given for free.",
         tags: [
             {
                 name: "react",
@@ -216,45 +200,78 @@ const projects = [
                 color: "green-text-gradient",
             },
             {
-                name: "tailwind",
-                color: "pink-text-gradient",
-            },
-        ],
-        image: carrent,
-        source_code_link: "https://github.com/",
-    },
-    {
-        name: "Job IT",
-        description:
-            "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-        tags: [
-            {
-                name: "react",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "restapi",
-                color: "green-text-gradient",
+                name: "express",
+                color: "orange-text-gradient",
             },
             {
                 name: "scss",
                 color: "pink-text-gradient",
             },
         ],
-        image: jobit,
-        source_code_link: "https://github.com/",
+        image: freebie,
+        web_code_link: "https://freebie-b8v3.onrender.com/",
+        source_code_link: "https://github.com/Brisilda-Bushi/Freebie",
     },
     {
-        name: "Trip Guide",
+        name: "Car Auction (Code Challenge)",
         description:
-            "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+            "A Web application that allows users to see the time limit for the auctions in real time.",
         tags: [
             {
-                name: "nextjs",
+                name: "angular",
+                color: "green-text-gradient",
+            },
+            {
+                name: "typescript",
                 color: "blue-text-gradient",
             },
             {
-                name: "supabase",
+                name: "mocha",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: carrent,
+        web_code_link: "https://frontend-carsale-coding-challenge.netlify.app/",
+        source_code_link:
+            "https://github.com/Brisilda-Bushi/Interview-Challenge-FullStack",
+    },
+    {
+        name: "E-Commerce",
+        description:
+            "A Web application that allows users to register, log in, choose the item they would like to purchase and add it to their cart.",
+        tags: [
+            {
+                name: "react",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "mongodb",
+                color: "green-text-gradient",
+            },
+            {
+                name: "express",
+                color: "orange-text-gradient",
+            },
+            {
+                name: "bootstrap",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: e_commerce,
+        web_code_link: "https://cat-bam.onrender.com/",
+        source_code_link: "https://github.com/Brisilda-Bushi/B.A.M-eCommerce",
+    },
+    {
+        name: "Pokemon Lite",
+        description:
+            "A mini game web application that allows 2 users in the same room to choose their own pokemon from the list and have a duel.",
+        tags: [
+            {
+                name: "Javascript",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "html",
                 color: "green-text-gradient",
             },
             {
@@ -262,9 +279,33 @@ const projects = [
                 color: "pink-text-gradient",
             },
         ],
-        image: tripguide,
-        source_code_link: "https://github.com/",
+        image: pokemon,
+        web_code_link: "https://pokemon-lite.netlify.app/",
+        source_code_link:
+            "https://github.com/Brisilda-Bushi/AMB-Project-Pokemon",
+    },
+    {
+        name: "Alpaca Farm",
+        description:
+            "A static web application that is advertising a farm that is raising alpacas, people can visit this location for fun activities.",
+        tags: [
+            {
+                name: "Javascript",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "html",
+                color: "green-text-gradient",
+            },
+            {
+                name: "css",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: alpaca,
+        web_code_link: "https://alpaca-project.netlify.app/",
+        source_code_link: "https://github.com/Brisilda-Bushi/Alpaca-Project",
     },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, projects };

@@ -47,7 +47,11 @@ const ComputersCanvas = () => {
             mediaQuery.addEventListener("change", handleMediaQueryChange);
         };
     }, []);
-    return (
+    return isMobile ? (
+        <div>
+            <img src="" />
+        </div>
+    ) : (
         <Canvas
             frameloop="demand"
             shadows

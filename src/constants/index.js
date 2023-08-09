@@ -34,6 +34,10 @@ export const navLinks = [
         title: "About",
     },
     {
+        id: "projects",
+        title: "Projects",
+    },
+    {
         id: "work",
         title: "Work",
     },
@@ -123,16 +127,16 @@ const technologies = [
 
 const experiences = [
     {
-        title: "Web Developer Tutor",
-        company_name: "DCI",
-        icon: DCI,
+        title: "Web Developer",
+        company_name: "SKF",
+        icon: SKF,
         iconBg: "#E6DEDD",
-        date: "Jan 2021 - Dec 2021",
+        date: "Jan 2022 - Present",
         points: [
-            "Creating exercises for my fellow learners.",
-            "Live coding and explaining challenging concepts.",
-            "Plan targeted lessons around questions and project concepts.",
-            "Help during the final project, while working on my final project.",
+            "Developing and maintaining web applications using Next.js and other related technologies.",
+            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+            "Implementing responsive design and ensuring cross-browser compatibility.",
+            "Participating in code reviews and providing constructive feedback to other developers.",
         ],
     },
     {
@@ -149,16 +153,16 @@ const experiences = [
         ],
     },
     {
-        title: "Web Developer",
-        company_name: "SKF",
-        icon: SKF,
+        title: "Web Developer Tutor",
+        company_name: "DCI",
+        icon: DCI,
         iconBg: "#E6DEDD",
-        date: "Jan 2022 - Present",
+        date: "Jan 2021 - Dec 2021",
         points: [
-            "Developing and maintaining web applications using Next.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Creating exercises for my fellow learners.",
+            "Live coding and explaining challenging concepts.",
+            "Plan targeted lessons around questions and project concepts.",
+            "Help during the final project, while working on my final project.",
         ],
     },
 ];

@@ -11,6 +11,7 @@ import {
     personalEmail,
     keyEmail,
 } from "../../config";
+import { toast } from "react-toastify";
 
 const Contact = () => {
     const formRef = useRef();
@@ -46,8 +47,18 @@ const Contact = () => {
             .then(
                 () => {
                     setLoading(false);
-                    alert(
-                        "Thank you, I will get back to you as soon as possible",
+                    toast.success(
+                        "Thank you, I will get back to you as soon as possible!",
+                        {
+                            position: "top-center",
+                            autoClose: 5000,
+                            hideProgressBar: true,
+                            closeOnClick: true,
+                            pauseOnHover: true,
+                            draggable: true,
+                            progress: undefined,
+                            theme: "dark",
+                        },
                     );
                     setForm({
                         name: "",
@@ -58,7 +69,16 @@ const Contact = () => {
                 (error) => {
                     setLoading(false);
                     console.log(error);
-                    alert("Something went wrong.");
+                    toast.error("Something went wrong. Try again later!", {
+                        position: "top-center",
+                        autoClose: 5000,
+                        hideProgressBar: true,
+                        closeOnClick: true,
+                        pauseOnHover: true,
+                        draggable: true,
+                        progress: undefined,
+                        theme: "dark",
+                    });
                 },
             );
     };

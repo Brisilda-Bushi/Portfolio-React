@@ -7,11 +7,11 @@ import "react-toastify/dist/ReactToastify.css";
 import {
     About,
     Contact,
-    Experience,
+    Work,
     Hero,
     Navbar,
     Tech,
-    Works,
+    Projects,
 } from "./components";
 
 const App = () => {
@@ -23,9 +23,9 @@ const App = () => {
                     <Hero />
                 </div>
                 <About />
-                <Works />
+                <Projects />
                 <Tech />
-                <Experience />
+                <Work />
                 <div className="relative z-0">
                     <Contact />
                 </div>

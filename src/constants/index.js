@@ -21,7 +21,7 @@ import {
     carrent,
     freebie,
     ig_clone,
-    imageboard,
+    js_portfolio,
     pokemon,
     alpaca,
     e_commerce,
@@ -215,6 +215,28 @@ const projects = [
         image: freebie,
         web_code_link: "https://freebie-b8v3.onrender.com/",
         source_code_link: "https://github.com/Brisilda-Bushi/Freebie",
+    },
+    {
+        name: "Previous Portfolio",
+        description:
+            "Web application which is responsive from desktop to mobile view and also has a dark mode, this was my first portofolio that I have worked during the end of attending the bootcamp.",
+        tags: [
+            {
+                name: "javascript",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "html",
+                color: "green-text-gradient",
+            },
+            {
+                name: "css",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: js_portfolio,
+        web_code_link: "https://portfolio-server-gzuz.onrender.com/",
+        source_code_link: "https://github.com/Brisilda-Bushi/Portfolio",
     },
     {
         name: "Car Auction (Code Challenge)",

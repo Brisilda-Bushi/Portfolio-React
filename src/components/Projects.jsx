@@ -20,7 +20,7 @@ const ProjectCard = ({
     return (
         <Tilt
             options={{ max: 45, scale: 1, speed: 450 }}
-            className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
+            className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full h-full"
         >
             <div className="relative w-full h-[230px]">
                 <img
@@ -125,10 +125,11 @@ const Projects = () => {
                         complex problems, work with different technologies, and
                         manage projects effectively.
                     </motion.p>
-                    <div className="mt-20 flex flex-wrap gap-7">
+                    <div className="mt-20 flex flex-wrap items-stretch gap-7">
                         {projects.map((project, index) => (
                             <div key={`${project.name}-${index}`} index={index}>
                                 <motion.div
+                                    style={{ height: "100%" }}
                                     variants={fadeIn(
                                         "up",
                                         "spring",

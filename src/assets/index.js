@@ -27,6 +27,7 @@ import DCI from "./company/DCI.png";
 import SKF from "./company/SKF.png";
 
 import freebie from "./projects/Freebie.png";
+import js_portfolio from "./projects/JS-portfolio.png";
 import ig_clone from "./projects/IG-clone-ex.png";
 import imageboard from "./projects/imageboard.png";
 import pokemon from "./projects/pokemon.png";
@@ -62,6 +63,7 @@ export {
     DCI,
     carrent,
     freebie,
+    js_portfolio,
     ig_clone,
     imageboard,
     pokemon,

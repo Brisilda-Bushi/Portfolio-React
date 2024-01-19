@@ -2,14 +2,8 @@
 /* eslint-disable react/no-unknown-property */
 import React, { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
-import {
-    ContactShadows,
-    OrbitControls,
-    Preload,
-    useGLTF,
-} from "@react-three/drei";
+import { OrbitControls, Preload } from "@react-three/drei";
 import { Avatar } from "../Avatar/Avatar";
-import { useControls } from "leva";
 
 import CanvasLoader from "../Loader";
 ``;

@@ -1,6 +1,8 @@
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
-import { ToastContainer, toast } from "react-toastify";
+import { ToastContainer } from "react-toastify";
+import { Avatar } from "./components/Avatar/Avatar";
+import { Canvas } from "@react-three/fiber";
 
 import "react-toastify/dist/ReactToastify.css";
 

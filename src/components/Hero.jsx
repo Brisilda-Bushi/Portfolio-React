@@ -33,13 +33,6 @@ const Hero = () => {
                         Hi, I am
                         <span className="text-[#915eff]"> Brisilda</span>
                     </h1>
-                    <p
-                        className={`${styles.heroSubText} mt-2 w-[300px] text-white-100`}
-                    >
-                        Always developing my knowledge on web development,
-                        <br className="sm:block hidden" />
-                        mobile apps and mobile games.
-                    </p>
                 </div>
             </div>
             <AvatarCanvas />

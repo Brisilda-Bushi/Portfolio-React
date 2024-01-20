@@ -3,10 +3,10 @@
 import React, { Suspense, useState, useEffect } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload } from "@react-three/drei";
-import { Avatar } from "../Avatar/Avatar";
+import Avatar from "./Avatar";
+import { Computers } from "./Computers";
 
 import CanvasLoader from "../Loader";
-``;
 
 const AvatarCanvas = () => {
     const [isMobile, setIsMobile] = useState(false);
@@ -24,14 +24,7 @@ const AvatarCanvas = () => {
         };
     }, []);
     return (
-        <Canvas
-            shadows
-            camera={
-                isMobile
-                    ? { position: [0, 2, 7], fov: 30 }
-                    : { position: [0, 2, 5], fov: 30 }
-            }
-        >
+        <Canvas shadows camera={{ position: [0, 2, 5], fov: 30 }}>
             <Suspense fallback={<CanvasLoader />}>
                 <OrbitControls
                     enableZoom={false}
@@ -40,6 +33,7 @@ const AvatarCanvas = () => {
                 />
                 <group position-y={-1}>
                     <Avatar />
+                    <Computers />
                     <ambientLight intensity={1} />
                 </group>
             </Suspense>

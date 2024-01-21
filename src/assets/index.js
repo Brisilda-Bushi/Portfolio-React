@@ -34,6 +34,7 @@ import pokemon from "./projects/pokemon.png";
 import alpaca from "./projects/alpaca.png";
 import carrent from "./projects/carrent.png";
 import e_commerce from "./projects/ecommerce.png";
+import homenest from "./projects/homenest.png";
 
 export {
     logo,
@@ -69,4 +70,5 @@ export {
     pokemon,
     alpaca,
     e_commerce,
+    homenest,
 };

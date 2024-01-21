@@ -26,6 +26,7 @@ import {
     alpaca,
     e_commerce,
     threejs,
+    homenest,
 } from "../assets";
 
 export const navLinks = [
@@ -168,6 +169,28 @@ const experiences = [
 ];
 
 const projects = [
+    {
+        name: "HomeNest",
+        description:
+            "WIP: Freelance voluntary project, the client requested a one pager in which people can check their services and reach out to them.",
+        tags: [
+            {
+                name: "react",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "tailwindcss",
+                color: "green-text-gradient",
+            },
+            {
+                name: "framer motion",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: homenest,
+        web_code_link: "https://homenest.onrender.com/",
+        source_code_link: "https://github.com/Brisilda-Bushi/homenest",
+    },
     {
         name: "Instagram Clone",
         description:

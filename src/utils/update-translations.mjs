@@ -1,5 +1,5 @@
 import fs from "fs";
-const filePath = "src/translations/en-US.json";
+const filePath = "src/translations/en.json";
 
 const jsonData = JSON.parse(fs.readFileSync(filePath, "utf-8"));
 

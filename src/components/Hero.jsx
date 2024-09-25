@@ -19,6 +19,7 @@ const Hero = () => {
       mediaQuery.addEventListener("change", handleMediaQueryChange);
     };
   }, []);
+
   return (
     <section className="relative w-full h-screen mx-auto">
       <div

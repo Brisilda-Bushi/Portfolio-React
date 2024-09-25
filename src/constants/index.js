@@ -1,3 +1,4 @@
+import i18next from "../i18n";
 import {
   mobile,
   backend,
@@ -32,7 +33,7 @@ import {
 export const navLinks = [
   {
     id: "about",
-    title: "About",
+    title: i18next.t("About"),
   },
   {
     id: "work",

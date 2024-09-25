@@ -9,37 +9,37 @@ import { Computers } from "./Computers";
 import CanvasLoader from "../Loader";
 
 const AvatarCanvas = () => {
-    const [isMobile, setIsMobile] = useState(false);
-    useEffect(() => {
-        const mediaQuery = window.matchMedia("(max-width: 800px)");
+  const [isMobile, setIsMobile] = useState(false);
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 800px)");
 
-        setIsMobile(mediaQuery.matches);
+    setIsMobile(mediaQuery.matches);
 
-        const handleMediaQueryChange = (event) => {
-            setIsMobile(event.matches);
-        };
+    const handleMediaQueryChange = (event) => {
+      setIsMobile(event.matches);
+    };
 
-        return () => {
-            mediaQuery.addEventListener("change", handleMediaQueryChange);
-        };
-    }, []);
-    return (
-        <Canvas shadows camera={{ position: [0, 2, 5], fov: 30 }}>
-            <Suspense fallback={<CanvasLoader />}>
-                <OrbitControls
-                    enableZoom={false}
-                    maxPolarAngle={Math.PI / 2}
-                    minPolarAngle={Math.PI / 2}
-                />
-                <group position-y={-1}>
-                    <Avatar />
-                    <Computers />
-                    <ambientLight intensity={1} />
-                </group>
-            </Suspense>
-            <Preload all />
-        </Canvas>
-    );
+    return () => {
+      mediaQuery.addEventListener("change", handleMediaQueryChange);
+    };
+  }, []);
+  return (
+    <Canvas shadows camera={{ position: [0, 2, 5], fov: 30 }}>
+      <Suspense fallback={<CanvasLoader />}>
+        <OrbitControls
+          enableZoom={false}
+          maxPolarAngle={Math.PI / 2}
+          minPolarAngle={Math.PI / 2}
+        />
+        <group position-y={-1}>
+          <Avatar />
+          <Computers />
+          <ambientLight intensity={1} />
+        </group>
+      </Suspense>
+      <Preload all />
+    </Canvas>
+  );
 };
 
 export default AvatarCanvas;

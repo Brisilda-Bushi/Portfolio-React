@@ -36,7 +36,7 @@ const Hero = () => {
         </div>
       </div>
       <AvatarCanvas />
-      <div className="absolute xs:bottom-10 bottom-10 w-full flex justify-center items-center z-10">
+      <div className="absolute xs:bottom-10 bottom-20 w-full flex justify-center items-center z-10">
         <a href="#about">
           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
             <motion.div

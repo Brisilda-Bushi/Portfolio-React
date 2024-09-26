@@ -72,6 +72,13 @@ const Projects = () => {
     const [isMobile, setIsMobile] = useState(false);
     const { projects } = allData();
 
+    const [hasAnimated, setHasAnimated] = useState(false);
+
+    // Trigger animation only on first mount
+    useEffect(() => {
+        setHasAnimated(true);
+    }, []);
+
     useEffect(() => {
         const mediaQuery = window.matchMedia("(max-width: 800px)");
 
@@ -130,17 +137,7 @@ const Projects = () => {
                     <div className="mt-20 flex flex-wrap items-stretch gap-7">
                         {projects.map((project, index) => (
                             <div key={`${project.name}-${index}`} index={index}>
-                                <motion.div
-                                    style={{ height: "100%" }}
-                                    variants={fadeIn(
-                                        "up",
-                                        "spring",
-                                        index * 0.5,
-                                        0.75,
-                                    )}
-                                >
-                                    <ProjectCard {...project} />
-                                </motion.div>
+                                <ProjectCard {...project} />
                             </div>
                         ))}
                     </div>

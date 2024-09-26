@@ -133,7 +133,7 @@ export const allData = () => {
                 company_name: t("SKF Lubrication Management"),
                 icon: SKF,
                 iconBg: "#E6DEDD",
-                date: "Jan 2022 - Present",
+                date: t("Jan. 2022 - Present"),
                 points: [
                     t(
                         "Frontend Development: Leveraged AWS CodeCommit & Amplify, Next.js, TypeScript, Storybook, Jest, React Testing Library, SWR, and an internal component library using Ant Design to develop robust, cross-browser compatibility and responsive user interfaces.",
@@ -154,7 +154,7 @@ export const allData = () => {
                 company_name: t("SKF Lubrication Management"),
                 icon: SKF,
                 iconBg: "#E6DEDD",
-                date: "Jan 2022 - Present",
+                date: t("Jan. 2022 - Present"),
                 points: [
                     t(
                         "Collaborate with UI and Branding Team, to enhance the internal design system.",
@@ -175,7 +175,7 @@ export const allData = () => {
                 company_name: t("DCI"),
                 icon: DCI,
                 iconBg: "#E6DEDD",
-                date: "Jan 2021 - Dec 2021",
+                date: "Jan. 2021 - Dec. 2021",
                 points: [
                     t("Creating exercises for my fellow learners."),
                     t(

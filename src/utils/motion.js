@@ -16,7 +16,7 @@ export const textVariant = (delay) => {
     };
 };
 
-export const fadeIn = (direction, type, delay, duration) => {
+export const fadeIn = (direction, type, delay = 0.1, duration = 1) => {
     return {
         hidden: {
             x: direction === "left" ? 100 : direction === "right" ? -100 : 0,
@@ -29,8 +29,8 @@ export const fadeIn = (direction, type, delay, duration) => {
             opacity: 1,
             transition: {
                 type: type,
-                delay: delay,
-                duration: duration,
+                delay: delay, // Delay based on index
+                duration: duration, // Duration for the fade-in
                 ease: "easeOut",
             },
         },

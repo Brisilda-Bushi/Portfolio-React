@@ -1,13 +1,17 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { styles } from "../styles";
-import { navLinks } from "../constants";
+import { allData } from "../constants";
 import { logo, menu, close } from "../assets";
+import i18n from "../i18n";
+import { useTranslation } from "react-i18next";
 
 const Navbar = () => {
     const [active, setActive] = useState("");
     const [toggle, setToggle] = useState(false);
     const [scrolled, setScrolled] = useState(false);
+    const { navLinks } = allData();
+    const [selectedLanguage, setSelectedLanguage] = useState("en");
 
     useEffect(() => {
         const handleScroll = () => {
@@ -23,6 +27,13 @@ const Navbar = () => {
 
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
+
+    const { t } = useTranslation();
+
+    const handleLanguage = (lng) => {
+        i18n.changeLanguage(lng);
+        setSelectedLanguage(lng);
+    };
 
     return (
         <nav
@@ -44,10 +55,11 @@ const Navbar = () => {
                     />
                     <p className="text-white text-[18px] font-bold cursor-pointer flex">
                         Brisilda &nbsp;
-                        <span className="md:block hidden">|&nbsp; Bushi</span>
+                        <span className="lg:block hidden">|&nbsp; Bushi</span>
                     </p>
                 </Link>
-                <ul className="list-none hidden sm:flex flex-row gap-10">
+
+                <ul className="list-none hidden md:flex flex-row gap-10">
                     {navLinks.map((nav) => (
                         <li
                             key={nav.id}
@@ -61,9 +73,19 @@ const Navbar = () => {
                             <a href={`#${nav.id}`}>{nav.title}</a>
                         </li>
                     ))}
+
+                    <select
+                        value={selectedLanguage}
+                        onChange={(e) => handleLanguage(e.target.value)}
+                    >
+                        <option value="en">{t("English")}</option>
+                        <option value="de">{t("German")}</option>
+                        <option value="gr">{t("Greek")}</option>
+                        <option value="al">{t("Albanian")}</option>
+                    </select>
                 </ul>
 
-                <div className="sm:hidden flex flex-1 justify-end items-center">
+                <div className="md:hidden flex flex-1 justify-end items-center">
                     <img
                         src={toggle ? close : menu}
                         alt="menu"
@@ -92,6 +114,15 @@ const Navbar = () => {
                                     <a href={`#${nav.id}`}>{nav.title}</a>
                                 </li>
                             ))}
+                            <select
+                                value={selectedLanguage}
+                                onChange={(e) => handleLanguage(e.target.value)}
+                            >
+                                <option value="en">{t("English")}</option>
+                                <option value="de">{t("German")}</option>
+                                <option value="gr">{t("Greek")}</option>
+                                <option value="al">{t("Albanian")}</option>
+                            </select>
                         </ul>
                     </div>
                 </div>

@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { BallCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
-import { technologies } from "../constants";
+import { allData } from "../constants";
 import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 import { fadeIn } from "../utils/motion";
 
 const Tech = () => {
     const [isMobile, setIsMobile] = useState(false);
+    const { technologies } = allData();
 
     useEffect(() => {
         const mediaQuery = window.matchMedia("(max-width: 800px)");

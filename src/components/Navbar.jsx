@@ -73,8 +73,8 @@ const Navbar = () => {
                             <a href={`#${nav.id}`}>{nav.title}</a>
                         </li>
                     ))}
-
                     <select
+                        className="text-secondary font-bold focus:outline-none bg-primary font-medium text-[18px]"
                         value={selectedLanguage}
                         onChange={(e) => handleLanguage(e.target.value)}
                     >
@@ -115,6 +115,7 @@ const Navbar = () => {
                                 </li>
                             ))}
                             <select
+                                className="w-full text-secondary font-bold border-0 outline-none focus:outline-none focus:border-0 bg-transparent font-medium "
                                 value={selectedLanguage}
                                 onChange={(e) => handleLanguage(e.target.value)}
                             >

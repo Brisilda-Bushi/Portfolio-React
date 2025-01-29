@@ -26,7 +26,8 @@ import {
   alpaca,
   e_commerce,
   threejs,
-  homenest
+  homenest,
+  marinafitness
 } from "../assets";
 import { useTranslation } from "react-i18next";
 
@@ -175,7 +176,7 @@ export const allData = () => {
         company_name: t("DCI"),
         icon: DCI,
         iconBg: "#E6DEDD",
-        date: "Jan. 2021 - Dec. 2021",
+        date: t("Jan. 2021 - Dec. 2021"),
         points: [
           t("Creating exercises for my fellow learners."),
           t("Plan targeted lessons around questions and project concepts."),
@@ -193,9 +194,32 @@ export const allData = () => {
     ],
     projects: [
       {
+        name: t("Marina Fitness"),
+        description: t(
+          "Freelance project, the client requested a one pager in which he can show his services and rates. People can reach out to them to book consultations."
+        ),
+        tags: [
+          {
+            name: t("react"),
+            color: "blue-text-gradient"
+          },
+          {
+            name: t("tailwindcss"),
+            color: "green-text-gradient"
+          },
+          {
+            name: t("framer motion"),
+            color: "pink-text-gradient"
+          }
+        ],
+        image: marinafitness,
+        web_code_link: "https://marinafitness.fit/",
+        source_code_link: "https://github.com/Brisilda-Bushi"
+      },
+      {
         name: t("HomeNest"),
         description: t(
-          "WIP: Freelance voluntary project, the client requested a one pager in which people can check their services and reach out to them."
+          "Freelance voluntary project, the client requested a one pager in which people can check their services and reach out to them."
         ),
         tags: [
           {

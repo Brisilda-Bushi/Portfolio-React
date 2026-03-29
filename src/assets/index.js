@@ -25,6 +25,7 @@ import aws from "./tech/aws.png";
 
 import DCI from "./company/DCI.png";
 import SKF from "./company/SKF.png";
+import LegalHero from "./company/LegalHero.png";
 
 import freebie from "./projects/Freebie.png";
 import js_portfolio from "./projects/JS-portfolio.png";
@@ -63,6 +64,7 @@ export {
   threejs,
   SKF,
   DCI,
+  LegalHero,
   carrent,
   freebie,
   js_portfolio,

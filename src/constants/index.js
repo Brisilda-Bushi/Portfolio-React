@@ -18,6 +18,7 @@ import {
   aws,
   SKF,
   DCI,
+  LegalHero,
   carrent,
   freebie,
   ig_clone,
@@ -130,7 +131,31 @@ export const allData = () => {
     ],
     experiences: [
       {
-        title: t("Web Developer"),
+        title: t("Frontend Developer"),
+        company_name: t("LegalHero"),
+        icon: LegalHero,
+        iconBg: "#E6DEDD",
+        date: t("Mar. 2025 - Present"),
+        points: [
+          t(
+            "Frontend Development: Own the development of scalable customer-facing and internal platforms using React and TypeScript, delivering responsive, high-quality user interfaces for complex, data-driven applications."
+          ),
+          t(
+            "Product & Workflow Design: Design and implement complex user workflows to support insurance-related requests and internal operations, translating product and legal requirements into maintainable UI solutions."
+          ),
+          t(
+            "Feature Leadership: Led the implementation of a telephone consultation workflow, enabling real-time lawyer consultations and structured case eligibility assessments for efficient next-step progression."
+          ),
+          t(
+            "Testing & Quality Assurance: Ensure high code quality through unit testing with Jest and end-to-end testing with Cypress, alongside thorough code reviews and frontend best practices."
+          ),
+          t(
+            "Collaboration & Innovation: Work closely with backend engineers and stakeholders while leveraging AI-assisted development tools (e.g., Opencode, Claude Code, Codex) to improve development speed and productivity."
+          )
+        ]
+      },
+      {
+        title: t("Software Engineer"),
         company_name: t("SKF Lubrication Management"),
         icon: SKF,
         iconBg: "#E6DEDD",
